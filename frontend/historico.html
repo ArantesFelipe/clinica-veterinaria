@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Histórico de Serviços</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Histórico de Serviços por Animal</h1>
+
+  <label for="animalSelect">Selecione um animal:</label>
+  <select id="animalSelect"></select>
+  <button onclick="carregarHistorico()">Ver Histórico</button>
+  <!-- Novo botão de atalho -->
+  <button id="voltarCadastro">Voltar ao Cadastro</button>
+
+  <ul id="listaHistorico"></ul>
+
+  <script src="historico.js"></script>
+  <script>
+    // Redireciona para a página de cadastro
+    document.getElementById('voltarCadastro').addEventListener('click', () => {
+      window.location.href = 'cadastro_animal.html';
+    });
+  </script>
+</body>
+</html>
